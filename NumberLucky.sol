@@ -1,13 +1,14 @@
 pragma solidity ^0.4.20;
 
 contract NumberLucky {
-    address owner;
-    uint256 _seed;
     uint256 public constant ROOM1_VALUE = 0.01 ether;
     uint256 public constant ROOM2_VALUE = 0.02 ether;
     uint256 public constant ROOM3_VALUE = 0.03 ether;
     uint256 public constant ROOM4_VALUE = 0.05 ether;
     uint256 public constant ROOM5_VALUE = 0.1 ether;
+
+    address owner;
+    uint256 _seed;
     address[] public players;
     bool public paused = false;
     struct Player {
